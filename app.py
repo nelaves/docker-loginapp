@@ -19,7 +19,7 @@ async def login(request: Request) -> dict:
     # Simple authentication logic (replace with your own logic)
     if username == "admin" and password == "secret":
         return {"message": "Login successful"}
-    return {"message": "Invalid username or password"}
+    return {"message": "Enter correct username or password"}
 
 # Initialize the Litestar app with a Jinja template engine and register the routes
 app = Litestar(
